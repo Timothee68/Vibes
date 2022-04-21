@@ -3,7 +3,7 @@
     margin:0;
     padding: 0;
     font-size:1em;
-    font-family: sans-serif;
+    font-family: 'Oxygen', 'Poppins', sans-serif;
 }
 
 body{
@@ -38,8 +38,13 @@ p{
     margin:0 auto;
 }
 
-/*********************** header*************** */
 
+
+
+
+
+
+/*********************** header*************** */
 
 header{
     display: flex;
@@ -93,14 +98,15 @@ header figure #header_img{
     flex-direction: column;
     align-items: center;
     position: absolute;
-    bottom:30%;
+    bottom:20%;
     left: 1%;
     color: white; 
     text-shadow: 1px 1px 2px rgb(187, 123, 19); 
 }
 
 .header_info button{
-    width: 10%;
+    margin-top: 50px;
+    width: 30%;
     background: none;
     color: white;
     text-shadow: 1px 1px 2px rgb(187, 123, 19); 
@@ -381,11 +387,12 @@ hr{
 
 .about{
     font-size:small;
-    width:33%;
+    width:100%;
     padding:50px;
 
 } 
 .about figure{
+    margin:10% 40%;
     width: 50px;
 }
 .about p {
@@ -404,17 +411,16 @@ hr{
     height: 40px;
     font-size: 15px;
     padding: 0 10%;
+    color:white;
 }
 .about input:first-child{
     width: 100%;
     background-color:rgba(65, 63, 63, 0.5);
-    color:white;
 }
 
 .about input:last-child{
-    background-color:rgba(0, 0, 0);
+    background-color: rgb(19, 18, 18);
     width: 50%;
-    color:white;
     border: solid red 2px;
 }
 
@@ -432,19 +438,25 @@ hr{
 
 .footer{
     width: 100%;
+    height: 200px;
     color: rgb(255, 255, 255);
     display: flex;
-    justify-content: space-between;
+   
 }
 .footer nav a{
- margin:0px 20px
+ margin:20px 20px;
 }
-.footer nav , .footer p {
-    margin: 20px 0px;
-    width: 40%;
+.footer nav{
+    margin: 20px 20px;
+    width: 50%;
+}
+ .footer p {
+    margin: 20px 20px;
+    width: 50%;
 }
 
 .footer nav a , .footer a{
+    font-size: 20px;
     text-decoration: none;
     color:white ;
 }
