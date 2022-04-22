@@ -64,19 +64,62 @@ header{
     margin-left: 8%;
 }
 
+
+
+/* menue burger */
+/* logo bar*/
+.bar {
+    width: 5%;
+    display: inline-block;
+    cursor: pointer;
+    padding-top:7%;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+
+  /* fin menu burger */
 .header nav{
     display:flex;
     justify-content: space-around;
     align-items: flex-end;
-    width:80%;
+    width:70%;
     padding: 20px;
 }
 
 .header nav a{
+    font-size: 1.3em;
     text-decoration: none;
     color:white ;
+    margin-left: 30px;
 }
+.header nav a:hover{
+   text-decoration: underline;
+   text-underline-offset:10px ;
 
+}
 
 .img_header{
     width: 100%;
@@ -212,7 +255,7 @@ header figure #header_img{
 
 .container_img figure img{
     margin: 0;
-    width: 25%;
+    width: 100%;
     height: 200px;
     object-fit: cover;
     object-position:right top ; 
@@ -222,29 +265,66 @@ header figure #header_img{
     display: flex;
     justify-content: space-around;
     width: 30%;
-    padding: 50px;
+    padding: 50px 0;
     color: black; 
 }
 
 .container_img nav a{
+    width:22%;
     color: black;
-    margin: 0;
+    margin: 0 2px;
 }
 
 .container_img button{
     background-color: white;
-    width: 10%;
+    width: 20%;
     color:rgb(211, 58, 58);
     border: solid rgb(211, 58, 58) 2px;
     height: 40px;  
 }
+/* portfolio show all etc  */
+.filterImg {
+    margin:0;
+    display: none;
+    width: 25%;
+}
+  
+.show {
+display: block;
+}
+
+.container {
+margin-top: 20px;
+overflow: hidden;
+}
+
+/* Style the buttons */
+.btn-container{
+    border: none;
+    width: 100%;
+}
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+background-color: #ddd;
+}
+
+.btn.active {
+    color: rgb(249, 0, 0);
+}
+
+
 
 /* partie commentaire */
 
 hr{
     background-color: rgb(255, 0, 0); 
-    width: 20%;
-    
+    width: 20%;  
 }
 
 .commentaires{

@@ -16,22 +16,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Poppins:ital@1&display=swap" rel="stylesheet">
     <title>Vibes</title>
+
 </head>
 <body>
     <div id="wraper">
         <header class="header">
+            <h1> template html</h1>
             <figure class="logo">
                 <img src="img/logo-vibes2y.avif" alt="logo-vibes">
             </figure>
-            <h1> template html</h1> 
-            <nav>
-                <a href="#" title="home">HOME</a>
-                <a href="#" title="about">ABOUT</a>
-                <a href="#" title="portfolio">PORTFOLIO</a>
-                <a href="#" title="testimonials">TESTIMONIALS</a>
-                <a href="#" title="contact">CONTACT</a>
-                <a href="#" title="pages">PAGES</a>
-            </nav>
+
+                    <nav>
+                        <div id="myLinks">
+                            <a href="#home" title="home">HOME</a>
+                            <a href="#about" title="about">ABOUT</a>
+                            <a href="#portfolio" title="portfolio">PORTFOLIO</a>
+                            <a href="#testimonials" title="testimonials">TESTIMONIALS</a>
+                            <a href="#contact" title="contact">CONTACT</a>
+                            <a href="#pages" title="pages">PAGES</a>
+                        </div>
+                    </nav>
+                    <div class="bar" onclick="myBar(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+
             <figure class="img_header">
                 <img id="header_img" src="img/mountain.jpg" alt="montagne">
             </figure>
@@ -115,21 +125,31 @@
             </div>         
                                  
             <div class="container_img">
-                    <figure>
-                        <img src="img/image1.jpg" alt="jeu">
-                        <img src="img/image2.jpg" alt="jeu">
-                        <img src="img/image3.jpg" alt="jeu">
-                        <img src="img/image4.jpg" alt="jeu">
-                        <img src="img/image5.jpg" alt="jeu">
-                        <img src="img/image6.jpg" alt="jeu">
-                        <img src="img/image7.jpg" alt="jeu">
-                        <img src="img/image8.jpg" alt="jeu">
+                    <figure class="content">
+                        <div class="filterImg audio" ><img src="img/image1.jpg" alt="jeu">
+                        </div>
+                        <div class="filterImg video" ><img src="img/image2.jpg" alt="jeu">
+                        </div>
+                        <div class="filterImg image" ><img src="img/image3.jpg" alt="jeu">
+                        </div>
+                        <div class="filterImg image" ><img src="img/image4.jpg" alt="jeu">
+                        </div>
+                        <div class="filterImg video" ><img src="img/image5.jpg" alt="jeu">
+                        </div>
+                        <div class="filterImg image"  ><img src="img/image6.jpg" alt="jeu">
+                        </div>
+                        <div class="filterImg audio" ><img src="img/image7.jpg" alt="jeu">
+                        </div>
+                        <div class="filterImg image" ><img src="img/image8.jpg" alt="jeu">
+                        </div>
                     </figure>
                 <nav>
-                    <a href="#">ALL</a>
-                    <a href="#">AUDIO</a>
-                    <a href="#">IMAGE</a>
-                    <a href="#">VIDEO</a>
+                    <div id="btn-container">
+                        <a href="#all" class="btn active" onclick="filterSelection('all')">ALL </a>
+                        <a href="#audio" class="btn" onclick="filterSelection('audio')">AUDIO</a>
+                        <a href="#image" class="btn" onclick="filterSelection('image')">IMAGE</a>
+                        <a href="#video" class="btn" onclick="filterSelection('video')">VIDEO</a>
+                    </div>        
                 </nav>
                 <button>LOAD MORE</button>
 
@@ -252,6 +272,7 @@
                 </nav>
             </footer>  
         </main>
-   </div>
-</body>
+        </div>
+    <script src="app.js"></script>
+    </body>
 </html>
